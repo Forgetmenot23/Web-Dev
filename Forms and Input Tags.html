@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <!-- The form tag asks for some action to submit the form in the backend for future reference. So here we will write it as backend.php. The submitted will be automatically restored in the backend-->
+        <label for="name"> Name</label>
+        <!-- Label helps us to directly get the cursor on the textbox with only clicking its id -->
+        <div>
+            <!-- 'div' tag is a block element.It is used to seperate different inputs and the latter comes on the different line -->
+            <input type="text" name="MyName" id="name">
+            <!-- You should always note that the 'for' and 'id' must contain the same data -->
+        </div>
+        <br>
+        <label for="role"> Role</label>
+        <div>
+            <input type="text" name="MyRole" id="role">
+        </div>
+        <br>
+        <label for="email"> Email</label>
+        <div>
+            <input type="email" name="MyEmail" id="email">
+        </div>
+        <br>
+        <label for="date"> Date</label>
+        <div>
+            <input type="date" name="MyDate" id="date">
+        </div>
+        <br>
+        <label for="salary"> Salary</label>
+        <div>
+            <input type="number" name="MySalary" id="salary">
+        </div>
+        <br>
+        <label for="are you eligible?"> Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="MyEligibility" id="are you eligible?">
+        </div>
+        <br>
+        <label for="gender"> Gender</label>
+        <div>
+            Male <input type="radio" name="MyGender" id="gender"> Female <input type="radio" name="MyGender"
+                id="gender"> Other <input type="radio" name="MyGender" id="gender">
+        </div>
+        <br>
+        <label for="write about yourself"> Write about yourself</label>
+        <div>
+            <br><textarea name="MyText" cols="30" rows="10" id="write about yourself"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car"> Car</label>
+            <select name="MyCar" id="car">
+                <option value="Inn">Innova</option>
+                <option value="Audi" selected>Audi</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="ResetNow">
+        </div>
+    </form>
+</body>
+
+</html>
