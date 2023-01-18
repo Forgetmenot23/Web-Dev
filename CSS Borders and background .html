@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds in CSS</title>
+    <style>
+        /* adding properties like color, width, style to the border in addition to baackground color, height, width */
+        #firstpara{
+            background-color: red;
+            height: 85px;
+            width: 300px;
+            /* To write all three border- color, border-width, border- style */
+            border: 3px solid cadetblue;
+            /* border-color: cadetblue;
+            border-width: 5px;
+            border-style: solid; */
+            border-radius: 0.2cm;
+        }
+        /* different changes to the border with various colors and radius */
+        #secondpara{
+            background-color: rgb(200, 210, 67);
+            /* height and width of the paragraph written */
+            height: 85px;
+            width: 300px;
+            /* gives the respc colors to the borders */
+            border-top: 3px solid violet;
+            border-bottom: 3px solid rgb(141, 93, 21);
+            border-right: 3px solid rgb(35, 54, 40);
+            border-left: 3px solid rgb(15, 106, 146);
+            /* the border-radius property curves the corners of the border */
+            border-top-right-radius: 15px;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 24px;
+        }
+        /* Adding image to the background with border */
+        #thirdpara{
+              /* height and width of the paragraph written */
+            border: 3px solid black;
+            height: 600px;
+            width: 500px;
+            /* image link which will be visible on the background of the text written */
+            background-image: url('https://cdn.pixabay.com/photo/2019/04/07/23/11/link-building-4111001__340.jpg');
+            /* To stop the image to repeat */
+            background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x  and y axis respc*/
+            background-position: 40px top;
+            background-position: 40px left;
+            background-position: top;
+            background-position: bottom;
+            background-position: center;
+            background-position: center top;
+            background-position: center right;
+            background-position: center left;
+            background-position: bottom left;
+            background-position: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is my first heading</h2>
+    <p id="firstpara">This is a paragraph</p>
+
+    <h2>This is my second heading</h2>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h2>This is my third heading</h2>
+    <p id="thirdpara">This is my third paragraph</p>
+</body>
+</html>
